@@ -21,6 +21,9 @@ return new class extends Migration {
       $table->integer('status')->default(1);
 
       $table->text('comments')->nullable();
+
+      $table->text('is_global_report')->default(false);
+
       $table->timestamps();
     });
   }
